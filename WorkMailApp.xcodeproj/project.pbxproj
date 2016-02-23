@@ -7,25 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E828A3311C7CAF510048A472 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E828A3301C7CAF510048A472 /* HomeViewController.m */; };
+		E8513F511C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m in Sources */ = {isa = PBXBuildFile; fileRef = E8513F501C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m */; };
+		E8513F531C7C9DF300C29D6C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8513F521C7C9DF300C29D6C /* MessageUI.framework */; };
+		E8513F5A1C7C9FE900C29D6C /* MailTextComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8513F591C7C9FE900C29D6C /* MailTextComposer.m */; };
+		E8513F5E1C7CA94900C29D6C /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = E8513F5D1C7CA94900C29D6C /* Preferences.m */; };
+		E885DF591C7C8BDF008E4F3B /* MailTextComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E885DF581C7C8BDF008E4F3B /* MailTextComposerViewController.m */; };
+		E885DF641C7C90FC008E4F3B /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E885DF621C7C90FC008E4F3B /* DatePickerView.m */; };
+		E885DF651C7C90FC008E4F3B /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E885DF631C7C90FC008E4F3B /* DatePickerView.xib */; };
 		E899299F1C7C8192006B3631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E899299E1C7C8192006B3631 /* main.m */; };
 		E89929A21C7C8192006B3631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E89929A11C7C8192006B3631 /* AppDelegate.m */; };
-		E89929A51C7C8192006B3631 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89929A41C7C8192006B3631 /* ViewController.m */; };
 		E89929A81C7C8192006B3631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89929A61C7C8192006B3631 /* Main.storyboard */; };
 		E89929AA1C7C8192006B3631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89929A91C7C8192006B3631 /* Assets.xcassets */; };
 		E89929AD1C7C8192006B3631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89929AB1C7C8192006B3631 /* LaunchScreen.storyboard */; };
+		E89929B81C7C8A6A006B3631 /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89929B71C7C8A6A006B3631 /* InputAccessoryView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E828A32F1C7CAF510048A472 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E828A3301C7CAF510048A472 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E8513F4F1C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+WorkMailApp.h"; sourceTree = "<group>"; };
+		E8513F501C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+WorkMailApp.m"; sourceTree = "<group>"; };
+		E8513F521C7C9DF300C29D6C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E8513F581C7C9FE900C29D6C /* MailTextComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTextComposer.h; sourceTree = "<group>"; };
+		E8513F591C7C9FE900C29D6C /* MailTextComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTextComposer.m; sourceTree = "<group>"; };
+		E8513F5C1C7CA94900C29D6C /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		E8513F5D1C7CA94900C29D6C /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		E885DF571C7C8BDF008E4F3B /* MailTextComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailTextComposerViewController.h; sourceTree = "<group>"; };
+		E885DF581C7C8BDF008E4F3B /* MailTextComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailTextComposerViewController.m; sourceTree = "<group>"; };
+		E885DF611C7C90FC008E4F3B /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
+		E885DF621C7C90FC008E4F3B /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
+		E885DF631C7C90FC008E4F3B /* DatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 		E899299A1C7C8192006B3631 /* WorkMailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkMailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E899299E1C7C8192006B3631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E89929A01C7C8192006B3631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E89929A11C7C8192006B3631 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E89929A31C7C8192006B3631 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E89929A41C7C8192006B3631 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E89929A71C7C8192006B3631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E89929A91C7C8192006B3631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89929AC1C7C8192006B3631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89929AE1C7C8192006B3631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E89929B71C7C8A6A006B3631 /* InputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputAccessoryView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,15 +54,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8513F531C7C9DF300C29D6C /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E828A32E1C7CAF3A0048A472 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E828A32F1C7CAF510048A472 /* HomeViewController.h */,
+				E828A3301C7CAF510048A472 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8513F4E1C7C9B9300C29D6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8513F4F1C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.h */,
+				E8513F501C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8513F571C7C9FE900C29D6C /* MailTextComposer */ = {
+			isa = PBXGroup;
+			children = (
+				E8513F581C7C9FE900C29D6C /* MailTextComposer.h */,
+				E8513F591C7C9FE900C29D6C /* MailTextComposer.m */,
+			);
+			path = MailTextComposer;
+			sourceTree = "<group>";
+		};
+		E8513F5B1C7CA93C00C29D6C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				E8513F5C1C7CA94900C29D6C /* Preferences.h */,
+				E8513F5D1C7CA94900C29D6C /* Preferences.m */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		E885DF561C7C8BCE008E4F3B /* MailTextComposer */ = {
+			isa = PBXGroup;
+			children = (
+				E885DF571C7C8BDF008E4F3B /* MailTextComposerViewController.h */,
+				E885DF581C7C8BDF008E4F3B /* MailTextComposerViewController.m */,
+			);
+			path = MailTextComposer;
+			sourceTree = "<group>";
+		};
+		E885DF5D1C7C90E8008E4F3B /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E885DF611C7C90FC008E4F3B /* DatePickerView.h */,
+				E885DF621C7C90FC008E4F3B /* DatePickerView.m */,
+				E885DF631C7C90FC008E4F3B /* DatePickerView.xib */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
 		E89929911C7C8192006B3631 = {
 			isa = PBXGroup;
 			children = (
+				E8513F521C7C9DF300C29D6C /* MessageUI.framework */,
 				E899299C1C7C8192006B3631 /* WorkMailApp */,
 				E899299B1C7C8192006B3631 /* Products */,
 			);
@@ -58,10 +136,13 @@
 		E899299C1C7C8192006B3631 /* WorkMailApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8513F5B1C7CA93C00C29D6C /* Preferences */,
+				E8513F571C7C9FE900C29D6C /* MailTextComposer */,
+				E8513F4E1C7C9B9300C29D6C /* Extensions */,
+				E89929B41C7C893D006B3631 /* Controllers */,
+				E89929B51C7C893D006B3631 /* Views */,
 				E89929A01C7C8192006B3631 /* AppDelegate.h */,
 				E89929A11C7C8192006B3631 /* AppDelegate.m */,
-				E89929A31C7C8192006B3631 /* ViewController.h */,
-				E89929A41C7C8192006B3631 /* ViewController.m */,
 				E89929A61C7C8192006B3631 /* Main.storyboard */,
 				E89929A91C7C8192006B3631 /* Assets.xcassets */,
 				E89929AB1C7C8192006B3631 /* LaunchScreen.storyboard */,
@@ -77,6 +158,32 @@
 				E899299E1C7C8192006B3631 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E89929B41C7C893D006B3631 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E828A32E1C7CAF3A0048A472 /* Home */,
+				E885DF561C7C8BCE008E4F3B /* MailTextComposer */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E89929B51C7C893D006B3631 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E885DF5D1C7C90E8008E4F3B /* DatePickerView */,
+				E89929B61C7C8A57006B3631 /* InputAccessory */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E89929B61C7C8A57006B3631 /* InputAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				E89929B71C7C8A6A006B3631 /* InputAccessoryView.xib */,
+			);
+			path = InputAccessory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E885DF651C7C90FC008E4F3B /* DatePickerView.xib in Resources */,
 				E89929AD1C7C8192006B3631 /* LaunchScreen.storyboard in Resources */,
+				E89929B81C7C8A6A006B3631 /* InputAccessoryView.xib in Resources */,
 				E89929AA1C7C8192006B3631 /* Assets.xcassets in Resources */,
 				E89929A81C7C8192006B3631 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89929A51C7C8192006B3631 /* ViewController.m in Sources */,
+				E885DF591C7C8BDF008E4F3B /* MailTextComposerViewController.m in Sources */,
 				E89929A21C7C8192006B3631 /* AppDelegate.m in Sources */,
 				E899299F1C7C8192006B3631 /* main.m in Sources */,
+				E8513F5E1C7CA94900C29D6C /* Preferences.m in Sources */,
+				E8513F5A1C7C9FE900C29D6C /* MailTextComposer.m in Sources */,
+				E8513F511C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m in Sources */,
+				E885DF641C7C90FC008E4F3B /* DatePickerView.m in Sources */,
+				E828A3311C7CAF510048A472 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +412,7 @@
 				E89929B31C7C8192006B3631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
