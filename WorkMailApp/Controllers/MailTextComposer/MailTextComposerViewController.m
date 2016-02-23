@@ -43,6 +43,10 @@
             wSelf.dateField.text = [[NSDateFormatter shortDateFormatter] stringFromDate:date];
             wSelf.selectedDate = date;
         }
+        else if (wSelf.mailCaseType == WorkMailCaseTypeEarlyGone) {
+            wSelf.dateField.text = [[NSDateFormatter timeFormatter] stringFromDate:date];
+            wSelf.selectedDate = date;
+        }
         else if (wSelf.mailCaseType == WorkMailCaseTypeOutOfOffice){
             
             if ([wSelf.datePickerView.nextTextResponder respondsToSelector:@selector(setText:)]) {
@@ -95,7 +99,7 @@
     if (self.mailCaseType == WorkMailCaseTypeDelay) {
         self.datePickerView.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     }
-    else if (self.mailCaseType == WorkMailCaseTypeOutOfOffice) {
+    else if (self.mailCaseType == WorkMailCaseTypeOutOfOffice || self.mailCaseType == WorkMailCaseTypeEarlyGone) {
         self.datePickerView.datePicker.datePickerMode = UIDatePickerModeTime;
     }
     

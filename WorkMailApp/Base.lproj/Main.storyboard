@@ -179,6 +179,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="i2B-yc-z3G" kind="show" id="OYa-du-BSM"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="htx-lX-O9M" style="IBUITableViewCellStyleDefault" id="RPs-BY-bg7">
                                         <rect key="frame" x="0.0" y="328" width="320" height="44"/>
