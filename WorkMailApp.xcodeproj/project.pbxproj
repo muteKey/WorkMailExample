@@ -20,8 +20,18 @@
 		E89929A81C7C8192006B3631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89929A61C7C8192006B3631 /* Main.storyboard */; };
 		E89929AA1C7C8192006B3631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89929A91C7C8192006B3631 /* Assets.xcassets */; };
 		E89929AD1C7C8192006B3631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89929AB1C7C8192006B3631 /* LaunchScreen.storyboard */; };
-		E89929B81C7C8A6A006B3631 /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89929B71C7C8A6A006B3631 /* InputAccessoryView.xib */; };
+		EDE2D0011C7D2505006D0384 /* WorkMailDelayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2D0001C7D2505006D0384 /* WorkMailDelayUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDE2CFFB1C7D241D006D0384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E89929921C7C8192006B3631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E89929991C7C8192006B3631;
+			remoteInfo = WorkMailApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E828A32F1C7CAF510048A472 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -46,7 +56,9 @@
 		E89929A91C7C8192006B3631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89929AC1C7C8192006B3631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89929AE1C7C8192006B3631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E89929B71C7C8A6A006B3631 /* InputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputAccessoryView.xib; sourceTree = "<group>"; };
+		EDE2CFF61C7D241D006D0384 /* WorkMailAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkMailAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE2CFFA1C7D241D006D0384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE2D0001C7D2505006D0384 /* WorkMailDelayUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkMailDelayUITests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8513F531C7C9DF300C29D6C /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE2CFF31C7D241D006D0384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +140,7 @@
 			children = (
 				E8513F521C7C9DF300C29D6C /* MessageUI.framework */,
 				E899299C1C7C8192006B3631 /* WorkMailApp */,
+				EDE2CFF71C7D241D006D0384 /* WorkMailAppUITests */,
 				E899299B1C7C8192006B3631 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				E899299A1C7C8192006B3631 /* WorkMailApp.app */,
+				EDE2CFF61C7D241D006D0384 /* WorkMailAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,17 +194,17 @@
 			isa = PBXGroup;
 			children = (
 				E885DF5D1C7C90E8008E4F3B /* DatePickerView */,
-				E89929B61C7C8A57006B3631 /* InputAccessory */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E89929B61C7C8A57006B3631 /* InputAccessory */ = {
+		EDE2CFF71C7D241D006D0384 /* WorkMailAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E89929B71C7C8A6A006B3631 /* InputAccessoryView.xib */,
+				EDE2CFFA1C7D241D006D0384 /* Info.plist */,
+				EDE2D0001C7D2505006D0384 /* WorkMailDelayUITests.m */,
 			);
-			path = InputAccessory;
+			path = WorkMailAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +227,24 @@
 			productReference = E899299A1C7C8192006B3631 /* WorkMailApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EDE2CFF51C7D241D006D0384 /* WorkMailAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE2CFFF1C7D241D006D0384 /* Build configuration list for PBXNativeTarget "WorkMailAppUITests" */;
+			buildPhases = (
+				EDE2CFF21C7D241D006D0384 /* Sources */,
+				EDE2CFF31C7D241D006D0384 /* Frameworks */,
+				EDE2CFF41C7D241D006D0384 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDE2CFFC1C7D241D006D0384 /* PBXTargetDependency */,
+			);
+			name = WorkMailAppUITests;
+			productName = WorkMailAppUITests;
+			productReference = EDE2CFF61C7D241D006D0384 /* WorkMailAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +256,10 @@
 				TargetAttributes = {
 					E89929991C7C8192006B3631 = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					EDE2CFF51C7D241D006D0384 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = E89929991C7C8192006B3631;
 					};
 				};
 			};
@@ -234,6 +277,7 @@
 			projectRoot = "";
 			targets = (
 				E89929991C7C8192006B3631 /* WorkMailApp */,
+				EDE2CFF51C7D241D006D0384 /* WorkMailAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,9 +289,15 @@
 			files = (
 				E885DF651C7C90FC008E4F3B /* DatePickerView.xib in Resources */,
 				E89929AD1C7C8192006B3631 /* LaunchScreen.storyboard in Resources */,
-				E89929B81C7C8A6A006B3631 /* InputAccessoryView.xib in Resources */,
 				E89929AA1C7C8192006B3631 /* Assets.xcassets in Resources */,
 				E89929A81C7C8192006B3631 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE2CFF41C7D241D006D0384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +319,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDE2CFF21C7D241D006D0384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE2D0011C7D2505006D0384 /* WorkMailDelayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDE2CFFC1C7D241D006D0384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E89929991C7C8192006B3631 /* WorkMailApp */;
+			targetProxy = EDE2CFFB1C7D241D006D0384 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E89929A61C7C8192006B3631 /* Main.storyboard */ = {
@@ -393,6 +459,30 @@
 			};
 			name = Release;
 		};
+		EDE2CFFD1C7D241D006D0384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WorkMailAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirill.vocabulary.WorkMailAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WorkMailApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDE2CFFE1C7D241D006D0384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WorkMailAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirill.vocabulary.WorkMailAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WorkMailApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +500,15 @@
 			buildConfigurations = (
 				E89929B21C7C8192006B3631 /* Debug */,
 				E89929B31C7C8192006B3631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE2CFFF1C7D241D006D0384 /* Build configuration list for PBXNativeTarget "WorkMailAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE2CFFD1C7D241D006D0384 /* Debug */,
+				EDE2CFFE1C7D241D006D0384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -32,6 +32,7 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL0-cB-ytU">
                             <rect key="frame" x="261" y="7" width="51" height="30"/>
+                            <accessibility key="accessibilityConfiguration" identifier="DatePickerDoneButton"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="MO9-ze-JKC"/>
                                 <constraint firstAttribute="width" constant="51" id="vYh-LR-XRF"/>
@@ -47,6 +48,7 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.44" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" identifier="DatePickerAccessoryView"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="RL0-cB-ytU" secondAttribute="trailing" constant="8" id="AT5-IO-10R"/>
                         <constraint firstAttribute="centerY" secondItem="RL0-cB-ytU" secondAttribute="centerY" id="sgK-ia-eKO"/>
@@ -55,6 +57,7 @@
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="DatePickerView"/>
             <constraints>
                 <constraint firstItem="Y2J-Cd-N1b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HYu-TV-Nxi"/>
                 <constraint firstAttribute="trailing" secondItem="Y2J-Cd-N1b" secondAttribute="trailing" id="RYH-pA-yrh"/>
@@ -65,7 +68,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="395" y="219"/>
+            <point key="canvasLocation" x="119" y="233"/>
         </view>
     </objects>
 </document>

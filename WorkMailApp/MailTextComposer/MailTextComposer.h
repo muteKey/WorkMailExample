@@ -38,4 +38,7 @@ static NSString *kMessageBody = @"kMessageBody";
 
 - (NSDictionary*)composeMailText;
 
+- (BOOL)validate:(NSError**)error;
+
+
 @end

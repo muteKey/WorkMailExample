@@ -29,6 +29,8 @@
 
 @property (nonatomic, strong) MailTextComposer *composer;
 
+@property (nonatomic, strong) UIAlertController *alertController;
+
 @end
 
 @implementation MailTextComposerViewController
@@ -65,13 +67,21 @@
     };
     
     self.datePickerView.datePicker.date = [NSDate date];
-    self.datePickerView.datePicker.maximumDate = [NSDate date];
+    self.datePickerView.datePicker.minimumDate = [NSDate date];
 }
 
 #pragma mark - UI actions
 
 - (IBAction)doneTapped:(UIBarButtonItem *)sender {
     [self collectData];
+    
+    NSError *er = nil;
+    
+    if (![self.composer validate:&er]) {
+        [self present:er];
+        return;
+    }
+    
     [self.view endEditing:YES];
     
     NSDictionary *mailDict = [self.composer composeMailText];
@@ -142,6 +152,24 @@
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(nullable NSError *)error {
     [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - UIAlertController -
+
+- (UIAlertAction *)okayAction {
+    return [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+}
+
+- (void)present:(NSError *)error {
+    if (self.alertController.presentingViewController == self) {
+        return;
+    }
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:error.localizedDescription
+                                                                   message:error.localizedFailureReason
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:self.okayAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

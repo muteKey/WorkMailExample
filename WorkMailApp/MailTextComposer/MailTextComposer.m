@@ -78,4 +78,25 @@
     return res;
 }
 
+
+- (BOOL)validate:(NSError *__autoreleasing *)error
+{
+    if (self.mailCaseType == WorkMailCaseTypeDayOff
+        || self.mailCaseType == WorkMailCaseTypeSickDay
+        || self.mailCaseType == WorkMailCaseTypeEarlyGone) {
+        
+        if (!self.date) {
+            *error = [NSError errorWithDomain:@"domain"
+                                         code:-1
+                                     userInfo:@{NSLocalizedDescriptionKey : @"Error",
+                                                NSLocalizedFailureReasonErrorKey : @"No date specified"}];
+        }
+        
+        return NO;
+    }
+    
+    return YES;
+}
+
+
 @end

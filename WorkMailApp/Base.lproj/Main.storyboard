@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="3Mf-yd-d2t">
-                            <rect key="frame" x="0.0" y="372" width="320" height="0.0"/>
+                            <rect key="frame" x="0.0" y="328" width="320" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -35,7 +35,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Warns your сolleagues if you are not working at specified date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yul-Mq-BCM">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Warns your colleagues if you are not working at specified date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yul-Mq-BCM">
                                                     <rect key="frame" x="15" y="25" width="270" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -44,6 +44,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="DayOffCell"/>
                                         <connections>
                                             <segue destination="i2B-yc-z3G" kind="show" id="2Xr-ly-eE2"/>
                                         </connections>
@@ -71,6 +72,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="SickDayCell"/>
                                         <connections>
                                             <segue destination="i2B-yc-z3G" kind="show" id="yJh-XU-hYc"/>
                                         </connections>
@@ -98,6 +100,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="DelayCell"/>
                                         <connections>
                                             <segue destination="2AF-L5-7XH" kind="show" id="eKe-Mt-Fi3"/>
                                         </connections>
@@ -125,6 +128,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="WeekPlanCell"/>
                                         <connections>
                                             <segue destination="d6G-aX-Ck5" kind="show" id="lcG-hf-c5h"/>
                                         </connections>
@@ -183,23 +187,6 @@
                                             <segue destination="i2B-yc-z3G" kind="show" id="OYa-du-BSM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="htx-lX-O9M" style="IBUITableViewCellStyleDefault" id="RPs-BY-bg7">
-                                        <rect key="frame" x="0.0" y="328" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RPs-BY-bg7" id="ADW-w1-CNr">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="htx-lX-O9M">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -229,11 +216,13 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k90-Na-u7s">
                                 <rect key="frame" x="20" y="72" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="DateField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5U-bd-2iL">
                                 <rect key="frame" x="20" y="72" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="EnterDateAction"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1Xt-za-OTn"/>
                                 </constraints>
@@ -243,8 +232,9 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Additional note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17h-Mg-Ji1">
                                 <rect key="frame" x="20" y="110" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AdditionalNoteField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <outlet property="delegate" destination="i2B-yc-z3G" id="eQa-5i-PtV"/>
                                 </connections>
@@ -252,6 +242,9 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzQ-8A-eSy" customClass="DatePickerView">
                                 <rect key="frame" x="0.0" y="362" width="320" height="206"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="DatePickerView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="206" id="y8Z-t7-hdp"/>
                                 </constraints>
@@ -389,8 +382,9 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your plans for week" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-wS-ejg">
                                 <rect key="frame" x="20" y="93" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PlansForWeekField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
                                 <connections>
                                     <outlet property="delegate" destination="d6G-aX-Ck5" id="9lD-ZJ-lr7"/>
                                 </connections>
@@ -403,6 +397,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What problems do you have" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QhW-x7-LFM">
                                 <rect key="frame" x="20" y="152" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ProblemsField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                 <connections>
@@ -472,6 +467,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter leave date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7a9-qG-No1">
                                 <rect key="frame" x="20" y="72" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LeadeDateField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -493,6 +489,7 @@
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter arrive time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IB3-Q6-yce">
                                 <rect key="frame" x="20" y="110" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ArriveTimeField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -507,8 +504,9 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Additional note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njc-sO-ayZ">
                                 <rect key="frame" x="20" y="148" width="280" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AdditionalNoteField"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <outlet property="delegate" destination="Ycb-Im-sVQ" id="s1P-er-wGQ"/>
                                 </connections>
