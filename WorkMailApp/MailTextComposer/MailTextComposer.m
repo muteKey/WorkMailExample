@@ -9,6 +9,7 @@
 #import "MailTextComposer.h"
 #import "NSDateFormatter+WorkMailApp.h"
 #import "Preferences.h"
+#import "NSString+Validation.h"
 
 @implementation MailTextComposer
 
@@ -83,16 +84,50 @@
 {
     if (self.mailCaseType == WorkMailCaseTypeDayOff
         || self.mailCaseType == WorkMailCaseTypeSickDay
-        || self.mailCaseType == WorkMailCaseTypeEarlyGone) {
+        || self.mailCaseType == WorkMailCaseTypeEarlyGone
+        || self.mailCaseType == WorkMailCaseTypeDelay) {
         
         if (!self.date) {
             *error = [NSError errorWithDomain:@"domain"
                                          code:-1
                                      userInfo:@{NSLocalizedDescriptionKey : @"Error",
                                                 NSLocalizedFailureReasonErrorKey : @"No date specified"}];
+            return NO;
         }
-        
-        return NO;
+    }
+    
+    else if (self.mailCaseType == WorkMailCaseTypeWeekPlan) {
+        if (!self.plans || [self.plans isEmpty]) {
+            *error = [NSError errorWithDomain:@"domain"
+                                         code:-1
+                                     userInfo:@{NSLocalizedDescriptionKey : @"Error",
+                                                NSLocalizedFailureReasonErrorKey : @"No week plan specified"}];
+            return NO;
+        }
+    }
+    
+    else if (self.mailCaseType == WorkMailCaseTypeOutOfOffice) {
+        if (!self.date) {
+            *error = [NSError errorWithDomain:@"domain"
+                                         code:-1
+                                     userInfo:@{NSLocalizedDescriptionKey : @"Error",
+                                                NSLocalizedFailureReasonErrorKey : @"No leave time specified"}];
+            return NO;
+        }
+        else if (!self.time) {
+            *error = [NSError errorWithDomain:@"domain"
+                                         code:-1
+                                     userInfo:@{NSLocalizedDescriptionKey : @"Error",
+                                                NSLocalizedFailureReasonErrorKey : @"No arrival time specified"}];
+            return NO;
+        }
+        else if ([self.date compare:self.time] == NSOrderedSame || [self.date compare:self.time] == NSOrderedDescending) {
+            *error = [NSError errorWithDomain:@"domain"
+                                         code:-1
+                                     userInfo:@{NSLocalizedDescriptionKey : @"Error",
+                                                NSLocalizedFailureReasonErrorKey : @"Delay time specified incorrectly   "}];
+            return NO;
+        }
     }
     
     return YES;

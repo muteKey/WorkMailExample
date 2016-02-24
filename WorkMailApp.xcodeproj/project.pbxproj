@@ -20,6 +20,7 @@
 		E89929A81C7C8192006B3631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89929A61C7C8192006B3631 /* Main.storyboard */; };
 		E89929AA1C7C8192006B3631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89929A91C7C8192006B3631 /* Assets.xcassets */; };
 		E89929AD1C7C8192006B3631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89929AB1C7C8192006B3631 /* LaunchScreen.storyboard */; };
+		ED84D6541C7DF59C00DD9E09 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED84D6531C7DF59C00DD9E09 /* NSString+Validation.m */; };
 		EDE2D0011C7D2505006D0384 /* WorkMailDelayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2D0001C7D2505006D0384 /* WorkMailDelayUITests.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		E89929A91C7C8192006B3631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89929AC1C7C8192006B3631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89929AE1C7C8192006B3631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED84D6521C7DF59C00DD9E09 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		ED84D6531C7DF59C00DD9E09 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
 		EDE2CFF61C7D241D006D0384 /* WorkMailAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkMailAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE2CFFA1C7D241D006D0384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE2D0001C7D2505006D0384 /* WorkMailDelayUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkMailDelayUITests.m; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 		E8513F4E1C7C9B9300C29D6C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ED84D6521C7DF59C00DD9E09 /* NSString+Validation.h */,
+				ED84D6531C7DF59C00DD9E09 /* NSString+Validation.m */,
 				E8513F4F1C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.h */,
 				E8513F501C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m */,
 			);
@@ -311,6 +316,7 @@
 				E885DF591C7C8BDF008E4F3B /* MailTextComposerViewController.m in Sources */,
 				E89929A21C7C8192006B3631 /* AppDelegate.m in Sources */,
 				E899299F1C7C8192006B3631 /* main.m in Sources */,
+				ED84D6541C7DF59C00DD9E09 /* NSString+Validation.m in Sources */,
 				E8513F5E1C7CA94900C29D6C /* Preferences.m in Sources */,
 				E8513F5A1C7C9FE900C29D6C /* MailTextComposer.m in Sources */,
 				E8513F511C7C9BA700C29D6C /* NSDateFormatter+WorkMailApp.m in Sources */,
